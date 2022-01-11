@@ -1,0 +1,5 @@
+runtime: go115
+
+env_variables:
+  MONGO_ATLAS_CONN_STR: "mongodb://localhost:27017"
+main: ./cmd/finance

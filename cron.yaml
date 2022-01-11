@@ -1,0 +1,26 @@
+cron:
+# - description: "Realtime stocks update"
+#   url: /tickers/updateStocksRealtime
+#   schedule: every 3 minutes from 09:31 to 16:07
+#   timezone: America/New_York
+
+- description: "Realtime cryptos update"
+  url: /tickers/updateCryptosRealtime
+  schedule: every 3 minutes 
+  timezone: America/New_York
+
+# - description: "EOD stocks update"
+#   url: /tickers/updateStocksEOD
+#   schedule: every monday, tuesday, wednesday, thursday, friday 18:15
+#   timezone: America/New_York
+
+- description: "EOD Cryptos update"
+  url: /tickers/updateCryptosEOD
+  schedule: every day 19:00
+  timezone: America/New_York
+
+- description: "Tickers news"
+  url: /tickers/updateNews
+  schedule: every 2 hours from 06:15 to 22:15
+  timezone: America/New_York
+
